@@ -4,9 +4,9 @@
     ViewBag.Title = "Create";
 }
 
-<h2>Create</h2>
+<h2>Add A Gig</h2>
 
-<form>
+@using (Html.BeginForm("Create", "Gigs")) {
     <div class="form-group">
         @Html.LabelFor(m => m.Venue)
         @Html.TextBoxFor(m => m.Venue, new { @class = "form-control" })
@@ -24,4 +24,5 @@
         @Html.DropDownListFor(m => m.Genre, new SelectList(Model.Genres, "Id", "Name"), "Select A Genre", new { @class = "form-control" })
     </div>
     <button type="submit" value="Save" class="btn btn-primary">Submit</button>
-</form>
+}
+
