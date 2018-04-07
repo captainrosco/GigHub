@@ -42,6 +42,21 @@ textarea {
 
 }
 
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #de3332a3;
+}
+
+.dropdown-menu {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
 body {
     font-size: 17px;
 }
@@ -73,9 +88,17 @@ h6,
     border-radius: 9px;
 }
 
+
+.form-control:focus {
+    border-color: #2196f43;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
 .btn {
     font-size: 17px;
     padding: 7px, 20px;
     -ms-border-radius: 9px;
     border-radius: 9px;
 }
+
