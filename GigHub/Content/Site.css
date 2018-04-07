@@ -22,3 +22,40 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+/*BootStrap Overrides*/
+
+
+
+.navbar-inverse {
+    background-color: #ff4342;
+    border-color: #ff4342;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: floralwhite;
+}
+
+.navbar-inverse .navbar-brand {
+    color: floralwhite;
+
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
