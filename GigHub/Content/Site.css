@@ -57,6 +57,10 @@ textarea {
     border-bottom-color: #fff;
 }
 
+.navbar-brand {
+    font-weight: 700;
+}
+
 body {
     font-size: 17px;
 }
