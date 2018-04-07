@@ -24,9 +24,13 @@ textarea {
 }
 
 
+span.field-validation-error {
+    color: red;
+    font-weight: bold;
+}
+
+
 /*BootStrap Overrides*/
-
-
 
 .navbar-inverse {
     background-color: #ff4342;
@@ -60,6 +64,8 @@ textarea {
 .navbar-brand {
     font-weight: 700;
 }
+
+
 
 body {
     font-size: 17px;
