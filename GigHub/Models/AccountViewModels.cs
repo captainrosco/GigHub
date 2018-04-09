@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace GigHub.Models
-{
+namespace GigHub.Models {
     public class ExternalLoginConfirmationViewModel
     {
         [Required]
@@ -79,6 +78,10 @@ namespace GigHub.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        public string Name { get; set; }
     }
 
     public class ResetPasswordViewModel
