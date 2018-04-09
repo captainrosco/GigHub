@@ -220,9 +220,14 @@
     <Compile Include="Migrations\201804090100180_AddedNameToUser.Designer.cs">
       <DependentUpon>201804090100180_AddedNameToUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804092309050_AddedAttendeceTable.cs" />
+    <Compile Include="Migrations\201804092309050_AddedAttendeceTable.Designer.cs">
+      <DependentUpon>201804092309050_AddedAttendeceTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Gig.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -326,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804090100180_AddedNameToUser.resx">
       <DependentUpon>201804090100180_AddedNameToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804092309050_AddedAttendeceTable.resx">
+      <DependentUpon>201804092309050_AddedAttendeceTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
