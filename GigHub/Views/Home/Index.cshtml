@@ -24,7 +24,8 @@
     <script>
         $(document).ready(function () {
             $(".js-toggle-attendance").click(function (e) {
-                var button = $(e.target); { gigId: button.attr("data-gig-id") })
+                var button = $(e.target);
+            $.post("/api/attendances",{ gigId: button.attr("data-gig-id") })
                 .done(function () {
                     button.removeClass("btn-default").addClass("btn-info").text("Going!");
                 })
