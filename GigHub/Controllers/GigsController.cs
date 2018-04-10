@@ -14,6 +14,23 @@ namespace GigHub.Controllers {
         }
 
         [Authorize]
+        public ActionResult Attending() {
+            var userId = User.Identity.GetUserId();
+            var gigs = _context.Attendances
+                .Where(a => a.AttendeeId == userId)
+                .Select(a => a.Gigs)
+                .ToList();
+
+            var viewModel = new HomeViewModel() {
+                UpcomingGigs = gigs,
+                ShowActions = User.Identity.IsAuthenticated
+            };
+
+            return View(viewModel);
+        }
+
+
+        [Authorize]
         public ActionResult Create() {
 
             var viewModel = new GigFormViewModel {
@@ -28,7 +45,7 @@ namespace GigHub.Controllers {
         [ValidateAntiForgeryToken]
         public ActionResult Create(GigFormViewModel viewModel) {
 
-            if(!ModelState.IsValid) {
+            if (!ModelState.IsValid) {
                 viewModel.Genres = _context.Genres.ToList();
                 return View("Create", viewModel);
             }
